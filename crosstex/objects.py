@@ -208,6 +208,7 @@ class inproceedings(citeableref):
     address   = Field(types=(location, country, state))
     year      = Field()
     month     = Field(types=(month,))
+    ee        = Field()
 
 class manual(citeableref):
     title = Field(required=True)
